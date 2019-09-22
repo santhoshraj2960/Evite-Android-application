@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.santhosh.loginactivity.EventDetail" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#0f0"
+        android:src="@drawable/ic_launcher" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="220sp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="center"
+        android:text="The Taj Mahal Palace Appolo Builers, Mumbai "
+        android:textColor="#fff"
+        android:textStyle="bold" >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#0f0"
+        android:onClick="showLocation"
+        android:src="@drawable/navigate" >
+    </ImageButton>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="220sp"
+        android:layout_height="1dp"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="72dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/eventtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="23dp"
+        android:text="Lunch"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#000"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="center"
+        android:text="23rd December 2014  06:30pm"
+        android:textColor="#ffa500"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
